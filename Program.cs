@@ -1,15 +1,19 @@
 ﻿
-// TODO: Step 5: Call the method
+// TODO: Step 7: Call the method
+GetGuests();
+
+// TODO: Step 6: Create a method to seat the guests at a table
 
 
-// TODO: Step 4: Create a method to seat the guests at a table
 
 
-// Step 2: Create a method to return a list (guests)
+
+
+// Step 4: Create a method to return a list (guests)
 List<Guest> GetGuests()
 {
-    // Step 3: Create a list of objects (new Guest)
-    List<Guest> guests = new List<Guest>
+    // Step 5: Create a list of objects (new Guest)
+    List<Guest> guests = new List<Guest>()
     {
     new Guest
     {
@@ -60,14 +64,23 @@ List<Guest> GetGuests()
         Bio = "(1917 - 1984) Prime Minister of India 1966 - 1977",
     }
     };
-    return (guests);
+    return guests;
 }
 
 
 // Step 1: create a class (Guest)
 public class Guest
 {
+    // Step 2:Create a constructor for the properties of the class
     public string Name { get; set; }
     public string Occupation { get; set; }
     public string Bio { get; set; }
+
+    //  Step 3: Create a constructor to make a new guest object
+    public Guest(string name, string, string occupation, string bio)
+    {
+        Name = name;
+        Occupation = occupation;
+        Bio = bio;
+    }
 }
